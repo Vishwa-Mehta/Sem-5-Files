@@ -1,0 +1,10 @@
+1. vendors who have sold atleast one product:
+SELECT DISTINCT vendor.product_id, login.email_id FROM vendor RIGHT JOIN login ON vendor.email_id = login.email_id WHERE vendor.product_id IS NOT NULL;
+
+
+2. Customers who bought a product atleast once:
+SELECT DISTINCT customer.cust_email_id, invoice.phone_no FROM customer LEFT JOIN invoice ON invoice.phone_no = customer.phone_no;
+
+
+3. Product qty and name of products in stock:
+SELECT stock.pqty AS prod_in_stock, product.product_name FROM stock LEFT JOIN product ON stock.pid = product.product_id UNION SELECT stock.pqty AS prod_in_stock, product.product_name FROM stock RIGHT JOIN product ON stock.pid = product.product_id;

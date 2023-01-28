@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `pes2ug20cs389`.`ticket`.`Travel_date` AS `Travel_date`,count(month(`pes2ug20cs389`.`ticket`.`Travel_date`)) AS `ticket_count` from `pes2ug20cs389`.`ticket` group by year(`pes2ug20cs389`.`ticket`.`Travel_date`)
+md5=fb06f5551a815aca713e8f24d3dc64bb
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=2022-10-20 04:13:04
+create-version=1
+source=SELECT ticket.Travel_date, COUNT(MONTH(ticket.Travel_date)) AS ticket_count FROM ticket GROUP BY YEAR(ticket.Travel_date)
+client_cs_name=utf8mb4
+connection_cl_name=utf8mb4_unicode_ci
+view_body_utf8=select `pes2ug20cs389`.`ticket`.`Travel_date` AS `Travel_date`,count(month(`pes2ug20cs389`.`ticket`.`Travel_date`)) AS `ticket_count` from `pes2ug20cs389`.`ticket` group by year(`pes2ug20cs389`.`ticket`.`Travel_date`)

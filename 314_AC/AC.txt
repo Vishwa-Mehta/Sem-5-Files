@@ -1,0 +1,16 @@
+no of key pairs symm = n*(n-1)/2
+no of key pairs asym = n*(n-1)
+KDC
+DHKE
+DHKE w/ certificate
+hash func
+MD
+SHA 1: k calc (padded bits)
+wj, kj
+salt
+
+for n ppl = (1-1/365)(1-2/365)..(1-((n-1)/365))
+for n = 366 -> prob = 1
+
+n = 23
+P(atleast one collision) = 1 - P(no collision) = 1- (1 - 1/365).. (1- 23-1/265) = 0.507 ~ 50%

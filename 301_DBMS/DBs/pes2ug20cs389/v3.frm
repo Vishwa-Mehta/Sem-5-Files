@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `pes2ug20cs389`.`compartment`.`Train_no` AS `Train_Name`,count(`pes2ug20cs389`.`compartment`.`Compartment_number`) AS `Number_Of_Compartments` from `pes2ug20cs389`.`compartment` group by `pes2ug20cs389`.`compartment`.`Train_no`
+md5=10c2e825a585eb772a1982858de84326
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=2022-10-01 07:46:20
+create-version=1
+source=SELECT Train_no AS Train_Name, COUNT(Compartment_number) AS Number_Of_Compartments FROM compartment GROUP BY compartment.Train_no
+client_cs_name=utf8mb4
+connection_cl_name=utf8mb4_unicode_ci
+view_body_utf8=select `pes2ug20cs389`.`compartment`.`Train_no` AS `Train_Name`,count(`pes2ug20cs389`.`compartment`.`Compartment_number`) AS `Number_Of_Compartments` from `pes2ug20cs389`.`compartment` group by `pes2ug20cs389`.`compartment`.`Train_no`
